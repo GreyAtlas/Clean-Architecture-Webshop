@@ -18,6 +18,8 @@ The application is currently hardcoded to connect to specific localhost ports, f
   dotnet run
 ```
 - Frontend
+
+For first time launch also run ```npm install```
 ```
   cd frontend
   npm run dev

@@ -5,7 +5,7 @@ echo Starting app servers.
 start "backend" cmd /k "cd ./backend/webshop.api && dotnet run"
 
 :: frontend 
-start "frontend" cmd /k "cd ./frontend && npm run dev"
+start "frontend" cmd /k "cd ./frontend && npm install && npm run dev"
 
 :: database on docker
 start "database" cmd /k "docker compose up"
