@@ -111,5 +111,3 @@ I would prefer to use an authentication service provider. Or set up an authentic
 4. Actual theming.
 
 Yeah... definitely not the prettiest frontend ever.
-
-5. 
