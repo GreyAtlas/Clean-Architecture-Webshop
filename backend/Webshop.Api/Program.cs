@@ -14,7 +14,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: AllowedOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:5173");
+                          policy.WithOrigins("http://localhost:5173")
+                          .AllowCredentials();
                       });
 });
 builder.Services.AddOpenApi();
