@@ -10,15 +10,14 @@ import NotificationListener from './features/notifications/components/Notificati
 function App() {
   return (
     <BrowserRouter>
-      <NotificationListener/>
+      <NotificationListener />
       <Layout>
         <Routes>
-            <Route path={"/"} element={<ProductDashboard />} />
-            <Route path={"/login"} element={<LoginPage />} />
-            <Route path={"/register"} element={<RegisterPage />} />
-            <Route path={"/cart"} element={<CartPage/>}/>
-             {/* <Route path="*" element={<NotFoundPage />} />  */}
-          </Routes>
+          <Route path={"/"} element={<ProductDashboard />} />
+          <Route path={"/login"} element={<LoginPage />} />
+          <Route path={"/register"} element={<RegisterPage />} />
+          <Route path={"/cart"} element={<CartPage />} />
+        </Routes>
       </Layout>
     </BrowserRouter>
   )
