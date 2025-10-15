@@ -4,7 +4,7 @@ import type { LoginRequest, LoginResponse, RefreshRequest, RefreshResponse, Regi
 
 export const authenticationService = {
   login: async (request: LoginRequest) => {
-    return (await backendApiAxiosInstance.post<LoginResponse>(`/identity/login`, request)).data
+    return await backendApiAxiosInstance.post<LoginResponse>(`/identity/login`, request)
   },
 
   register: async (request: RegisterRequest) => {
